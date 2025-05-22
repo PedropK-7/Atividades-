@@ -1,0 +1,8 @@
+def eh_palindromo(texto):
+  texto_limpo = ''.join(texto.lower().split())
+  return texto_limpo == texto_limpo[::-1]
+entrada = input("Digite uma palavra ou frase: ")
+if eh_palindromo(entrada):
+  print("É um palíndromo.")
+else:
+  print("Não é um palíndromo.")
