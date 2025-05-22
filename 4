@@ -1,0 +1,18 @@
+frase = input("Digite uma frase: ")
+
+frase = frase.lower()
+
+vogais = 0
+consoantes = 0
+
+vogais_lista = "aeiou"
+
+for letra in frase:
+    if letra.isalpha():  
+        if letra in vogais_lista:
+            vogais += 1
+        else:
+            consoantes += 1
+
+print(f"Número de vogais: {vogais}")
+print(f"Número de consoantes: {consoantes}")
