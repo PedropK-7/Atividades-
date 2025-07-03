@@ -1,0 +1,16 @@
+def inverter_string(texto):
+    pilha = []
+
+    for caractere in texto:
+        pilha.append(caractere)
+
+    texto_invertido = ""
+    while pilha:
+        texto_invertido += pilha.pop()
+
+    return texto_invertido
+
+entrada = "cachorrão"
+saida = inverter_string(entrada)
+print("String original:", entrada)
+print("String invertida:", saida)
